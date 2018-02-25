@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TimerFonctionnelSamedi</string>
+    <string name="nrb_sec">Nombre de secondes :</string>
+    <string name="button_valid">Lancer le décompte</string>
+    <string name="creer_decompte">Créer un décompte</string>
+    <string name="decompte_fini">Le décompte est fini</string>
+</resources>

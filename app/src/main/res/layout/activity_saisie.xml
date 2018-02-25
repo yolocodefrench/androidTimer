@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/libelle_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nrb_sec"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/saisie_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/lancer_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/button_valid"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
