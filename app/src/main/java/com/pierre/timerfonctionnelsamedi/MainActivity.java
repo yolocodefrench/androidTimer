@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
          textView = (TextView) findViewById(R.id.textDecompte);
 
+        if(savedInstanceState != null){
+            textView.setText(savedInstanceState.getInt("number1")+"");
+            this.setDecompte(savedInstanceState.getInt("number1"));
+
+        }
+        else{
+            textView.setText(this.getDecompte()+"");
+        }
+
          textView.setOnClickListener(this);
     }
 
@@ -74,5 +83,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+    protected void onSaveInstanceState(Bundle saveInstanceState){
+        saveInstanceState.putInt("number1" , MainActivity.this.getDecompte());
+        super.onSaveInstanceState(saveInstanceState);
+    }
+
+    public int getDecompte() {
+        return decompte;
+    }
+
+    public void setDecompte(int decompte) {
+        this.decompte = decompte;
+    }
+
+
 }
 
